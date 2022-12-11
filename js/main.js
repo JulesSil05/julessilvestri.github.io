@@ -11,6 +11,18 @@ menuHamburger.addEventListener('click', function(){
     navLinks.classList.toggle('mobile-menu')
 })
 
+linkNavs.forEach((link, i) => {  
+    setTimeout(() => {
+        link.classList.add('visible')
+    }, i * 100)    
+});
+
+linkNavs.forEach(link => {    
+    link.addEventListener('click', function(){
+        navLinks.classList.remove('mobile-menu')
+    })
+});
+
 linkNavs.forEach(link => {
     link.addEventListener('click', function(){
         navLinks.classList.remove('mobile-menu')
