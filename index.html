@@ -8,36 +8,42 @@ Begin : 24/11/2022 -->
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <title>Jules Silvestri</title>
+        <title>Jules SILVESTRI</title>
     </head>
-    <body>
-        <header id="header">
-            <nav>
-                <h1 id="title_page">Portfo<span class="cyan">lio</span></h1>
-                <div id="link_bar">
+    <body id="page">
+        <div id="scroll-path"></div>
+        <div id="progress-bar"></div>
+        
+            <nav class="nav-bar">
+                <h1 id="title-page">Portfo<span class="brown">lio</span></h1>
+                <div class="nav-links">
                     <ul>
-                        <li class="link_nav"><a href="*" class="link_nav_a">Acceuil</a></li>
-                        <li class="link_nav"><a href="*" class="link_nav_a">Mes compétences</a></li>
-                        <li class="link_nav"><a href="*" class="link_nav_a">Mes projets</a></li>
-                        <li class="link_nav"><a href="*" class="link_nav_a">Me contacter</a></li>
+                        <li class="link-nav"><a href="#" class="link_nav_a">Acceuil</a></li>
+                        <li class="link-nav"><a href="#formations" class="link_nav_a">Mes formations</a></li>
+                        <li class="link-nav"><a href="#experiences" class="link_nav_a">Mes expériences</a></li>
+                        <li class="link-nav"><a href="#skill" class="link_nav_a">Mes compétences</a></li>
+                        <li class="link-nav"><a href="#projects" class="link_nav_a">Mes projets</a></li>
                     </ul>
                 </div>
+                <img src="assets/pictures/hamburger_menu.png" class="menu-hamburger">
             </nav>
+        <header>
             <div id="header_content">
                 <h3><span id="hello_word">Hello</span>, je m'appelle</h3>
-                <h1>Jules <span class="cyan">Silvestri</span></h1>
-                <h3>Etudiant, à l'<span class="cyan">IUT d'Annecy</span></h3>
-                <ul>                    
-                    <li><span class="cyan">jules.silvestri@etu.univ-smb.fr</span></li>
-                    <li><span class="cyan">06 42 61 28 81</span></li>
-                </ul>
-                <a href="#">
+                <h1>Jules <span class="brown">SILVESTRI</span></h1>
+                <h3>Etudiant, à l'<span class="brown">IUT d'Annecy</span></h3>
+                <a href="#civil_state">
                     <div id="about_me_button">
                         <img src="assets/pictures/character_icon.png" alt="icone caractère">
                         <h2>A propos de moi</h2>
                     </div>
                 </a>
+                <div id="working_bloc">
+                    <div id="working_circle"></div>
+                    <p>Je suis actuellement à la recherche d'un stage</p>
+                </div>
             </div>
+            
             <div id="social_bar">
                 <div id="back_social"></div>
                 <div id="bloc_social">
@@ -51,11 +57,174 @@ Begin : 24/11/2022 -->
                     </div>
                 </div>
             </div>
-            <a href="#header">
+            <a href="#page">
                 <div id="return_head">
                     <img src="assets/pictures/arrow_icon.png">
                 </div>
             </a>
         </header>
+        <div id="content">
+            <div id="civil_state">
+                <div class="line"></div>
+                <h1 class="title-heading">Etat civil</h1>
+                <div id="bloc_civil">
+                    <div id="bloc_civil_left">
+                        <div class="big_line"></div>
+                        <h3><span class="brown">Date de naissance :</span> 5 mai 2003 (19 ans)</h3>
+                        <h3><span class="brown">Email :</span> jules.silvestri@etu.univ-smb.fr</h3>
+                        <h3><span class="brown">Adresse :</span> 441 route d'Héry</h3>
+                        <h3>74540 CUSY</h3>
+                        <div class="big_line"></div>
+                    </div>
+                    <div id="bloc_civil_right">
+                        <div class="big_line"></div>
+                        <h3><span class="brown">Téléphone :</span> 06 42 61 28 81</h3>
+                        <h3><span class="brown">Nationalité :</span> France</h3>
+                        <h3><span class="brown">Langue :</span> Anglais, niveau intermédiaire (B1)</h3>
+                        <h3><span class="brown">Locomotion :</span> Permis B, non motorisé</h3>
+                        <div class="big_line"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="carte" data-tilt>
+                <img src="assets/pictures/iut_picture.jpg" alt="">                
+                <a href="#footer" class="bouton">Contactez-moi</a>
+            </div>
+            
+
+            <div id="formations">
+                <div class="line"></div>
+                <br>
+                <h1 class="title-heading">Mes formations</h1>
+                <div id="timeline">
+                    <div id="left_timeline">
+                        <div id="first-item-timeline">
+                            <h3 class="year">2022 - 2023</h3>
+                            <h2>BUT Informatique (2ème année)</h2>
+                            <h3>IUT d'Annecy</h3>
+                            <h2 class="loc">Annecy, France (74)</h2>
+                        </div>
+                    </div>
+                    <div id="middle_timeline">
+                        <div id="first_circle_timeline"></div>
+
+                        <div id="second_circle_timeline"></div>
+                    </div>
+                    <div id="right_timeline">
+                        <div id="second_item_timeline">
+                            <h3 class="year">2021</h3>
+                            <h2>Baccalauréat Technologique STID2 - mention Bien</h2>
+                            <h2>(Science et Technologie de l’industrie et du développement durable)</h2>
+                            <h3>Lycée de l’Albanais</h3>
+                            <h2 class="loc">Rumilly, France (74)</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experiences">
+                <div class="line"></div>
+                <h1 class="title-heading">Mes expériences professionnelles</h1>
+                <div id="exp_bloc">
+                    <div class="exp">
+                        <div class="left_exp">
+                            <h2>Juillet-Août<br>
+                                (2021-2022)<br>
+                                (Cran-Gevrier, France)</h2>
+                        </div>
+                        <div class="right_exp">
+                            <h2><span class="brown">NTN-SNR <span class="italic">Manutentionnaire</span></span><br>
+                                <span class="grey">Job d’été</span><br>
+                                Je m’occupais du tri et du renseignement des produits dans un inventaire.</h2>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="left_exp">
+                            <h2>Juin 2021<br>
+                                (Thônes, France)</h2>
+                        </div>
+                        <div class="right_exp">
+                            <h2><span class="brown">Fromagerie Chabert <span class="italic">Ouvrier</span></span><br>
+                                <span class="grey">Job d’été</span><br>
+                                Aide pour mouler, démouler et ranger les fromages</h2>
+                        </div>
+                    </div>
+                    <div class="exp">
+                        <div class="left_exp">
+                            <h2>Juin 2021<br>
+                                (Seynod, France)</h2>
+                        </div>
+                        <div class="right_exp">
+                            <h2><span class="brown">Stokomani <span class="italic">Magasinier</span></span><br>
+                                <span class="grey">Job d’été</span><br>
+                                Réalisation de l’inventaire d’un magasin</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skill">
+                <div class="line"></div>
+                <h1 class="title-heading">Mes compétences</h1><br>
+                <div id="bloc-skill">
+                    <div class="bloc-skill-item">
+                        <img src="assets/pictures/coding_icon.png" alt="icon">
+                        <h1>Développement web</h1>
+                        <h2>HTML – CSS – Bases JavaScript - Bases PHP</h2>
+                    </div>
+                    <div class="bloc-skill-item">
+                        <img src="assets/pictures/network_icon.png" alt="icon">
+                        <h1>Réseau</h1>
+                        <h2>Serveur web - VirtualBox - Raspberry</h2>
+                    </div>
+                    <div class="bloc-skill-item">
+                        <img src="assets/pictures/database_icon.png" alt="icon">
+                        <h1>Base de données </h1>
+                        <h2>Base Postgres - Base MCD - phppgadmin</h2>
+                    </div>
+                    <div class="bloc-skill-item">
+                        <img src="assets/pictures/os_icon.png" alt="icon">
+                        <h1>Système</h1>
+                        <h2>Linux - GitHub</h2>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="projects">
+                <div class="line"></div>
+                <h1 class="title-heading">Mes projets</h1><br>
+                <div id="bloc-project">
+                    <div class="item-project">
+                        <img class="project-picture" src="assets/pictures/clubmed_capture.png">
+                        <div class="title-project">
+                            <h1>Réalisation d'un site web</h1>
+                        </div>
+                    </div>
+                    <div class="item-project">
+                        <img class="project-picture" src="assets/pictures/mirror_capture.jpg">
+                        <div class="title-project">
+                            <h1>Réalisation d'un miroir interactif</h1>
+                        </div>
+                    </div>
+                    <div class="item-project">
+                        <img class="project-picture" src="assets/pictures/raspberry.jpeg">
+                        <div class="title-project">
+                            <h1>Réalisation d'un mini serveur web</h1>
+                        </div>
+                    </div>
+                    <div class="item-project">
+                        <img class="project-picture" src="assets/pictures/remedys_capture.png">
+                        <div class="title-project">
+                            <h1>Réalisation d'un mini jeu en C#</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer id="footer">
+                <img src="assets/pictures/footer_background.png">
+                <p>Copyright © 2022 par Jules Silvestri tous droits réservés.</p>
+            </footer>
+        </div>
+        <script src="js/main.js"></script>
+        <script src="js/vanilla-tilt.js"></script>
     </body>
 </html>
