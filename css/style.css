@@ -653,6 +653,47 @@ footer img{
     #social_bar{
         display: none;
     }
+    #return_head{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        background-color: rgb(173, 135, 129);
+        border-radius: 7px;
+        position: fixed;
+        bottom: 2vw;
+        right: 2vw;
+        width: 45px;
+        height: 45px;
+    }
+    
+    #return_head img{
+        width: 100%;
+    }
+
+    #bloc_civil{
+        width: 100%;
+        float: left;
+        margin-left: 25vw;
+        text-align: center;
+    }
+    
+    #bloc_civil_left{
+        width: 80%;
+        float: left;
+        text-align: left;
+        line-height: 5vh;
+        margin-top: 50px
+    }
+    #bloc_civil_right{
+        text-align: left;
+        width: 80%;
+        float: left;
+        line-height: 5vh;
+        margin-top: 50px;
+    }
+    .big_line{
+        display: none;
+    }
 }
 
 
