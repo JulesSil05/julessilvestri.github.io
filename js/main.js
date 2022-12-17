@@ -7,15 +7,15 @@ const menuHamburger = document.querySelector('.menu-hamburger')
 const navLinks = document.querySelector('.nav-links')
 let linkNavs = document.querySelectorAll('.link-nav')
 
-menuHamburger.addEventListener('click', function(){
-    navLinks.classList.toggle('mobile-menu')
-})
-
 linkNavs.forEach((link, i) => {  
     setTimeout(() => {
         link.classList.add('visible')
     }, i * 100)    
 });
+
+menuHamburger.addEventListener('click', function(){
+    navLinks.classList.toggle('mobile-menu')
+})
 
 linkNavs.forEach(link => {    
     link.addEventListener('click', function(){

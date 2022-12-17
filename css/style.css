@@ -86,18 +86,20 @@ header{
 
 .nav-bar a{
     color: white;
-       
 }
 
 #title-page{
+    display: flex;
     font-size: 5vh;
     font-weight: 900;
     float: left;
-    margin-left: 2vw;
+    transition: all 0.5s ease;
 }
+
 .nav-bar .nav-links ul{
     display: flex;
 }
+
 .link-nav{
     display: flex;
     margin-top: -110px;
@@ -161,10 +163,6 @@ header{
 
 #header_content h3{
     font-size: 20px;
-}
-
-#header_content h1{
-    font-size: 60px;
 }
 
 #header_content li{
@@ -251,11 +249,11 @@ header{
     width: 4vw;
     height: 17vh;
 }
+
 #bloc_social_down{
     width: 4vw;
     height: 20vh;
 }
-
 
 .social_circle{
     line-height: 4vw;
@@ -267,6 +265,8 @@ header{
     height: 6vh;
     transition: 0.5s ease;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .social_circle :hover{
@@ -274,9 +274,12 @@ header{
     transform: scale(1.2);
 }
 
-
 .social_circle img{
-    width: 30px;
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: scale(0.8);
 }
 
 #return_head{
@@ -304,10 +307,7 @@ header{
     float: left;
     width: 100vw;
     text-align: center;
-    
 }
-
-
 
 #bloc_civil{
  width: 70vw;
@@ -647,6 +647,10 @@ footer img{
         font-size: 1.2em;
     }
     .carte{
+        display: none;
+    }
+
+    #social_bar{
         display: none;
     }
 }
